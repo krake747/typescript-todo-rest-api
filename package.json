@@ -1,0 +1,25 @@
+{
+    "name": "todo-rest-api",
+    "version": "1.0.0",
+    "description": "Todo Rest Api",
+    "main": "index.js",
+    "author": "Kevin Kraemer <kraemer.kevin747@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc --watch",
+        "clean": "rimraf .dist && tsc"
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.3",
+        "typescript": "^5.0.2",
+        "vitest": "^0.29.3"
+    },
+    "dependencies": {
+        "@types/koa": "^2.13.5",
+        "koa": "^2.14.1",
+        "koa-bodyparser": "^4.4.0",
+        "koa-json": "^2.0.2",
+        "koa-logger": "^3.2.1",
+        "koa-router": "^12.0.0"
+    }
+}
