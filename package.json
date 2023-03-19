@@ -6,16 +6,22 @@
     "author": "Kevin Kraemer <kraemer.kevin747@gmail.com>",
     "license": "MIT",
     "scripts": {
+        "start": "nodemon dist",
         "build": "tsc --watch",
-        "clean": "rimraf .dist && tsc"
+        "clean": "rimraf dist && tsc"
     },
     "devDependencies": {
+        "@types/koa": "^2.13.5",
+        "@types/koa-bodyparser": "^4.3.10",
+        "@types/koa-json": "^2.0.20",
+        "@types/koa-logger": "^3.1.2",
+        "@types/koa-router": "^7.4.4",
         "@types/node": "^18.15.3",
+        "nodemon": "^2.0.21",
         "typescript": "^5.0.2",
         "vitest": "^0.29.3"
     },
     "dependencies": {
-        "@types/koa": "^2.13.5",
         "koa": "^2.14.1",
         "koa-bodyparser": "^4.4.0",
         "koa-json": "^2.0.2",
