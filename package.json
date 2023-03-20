@@ -6,8 +6,9 @@
     "author": "Kevin Kraemer <kraemer.kevin747@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "start": "nodemon dist",
-        "build": "tsc --watch",
+        "dev": "nodemon dist",
+        "build": "tsc",
+        "watch": "tsc --watch",
         "clean": "rimraf dist && tsc"
     },
     "devDependencies": {
@@ -27,6 +28,7 @@
         "koa-json": "^2.0.2",
         "koa-logger": "^3.2.1",
         "koa-router": "^12.0.0",
+        "sqlite3": "^5.1.6",
         "zod": "^3.21.4"
     }
 }
